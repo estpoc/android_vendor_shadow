@@ -1,0 +1,143 @@
+#!/bin/sh
+#
+# Squish a SMBR otapackage for distribution
+# based on cyanogen
+#
+
+OUT_TARGET_HOST=`uname -a | grep Darwin`
+if [ -z "$OUT_TARGET_HOST" ]
+then
+   OUT_TARGET_HOST=linux-x86
+   MD5=md5sum
+else
+   OUT_TARGET_HOST=darwin-x86
+   MD5=md5
+fi
+
+if [ -z "$OUT" -o ! -d "$OUT" ]; then
+	echo "ERROR: $0 only works with a full build environment. $OUT should exist."
+	exit 1
+fi
+
+OTAPACKAGE=$OUT/$TARGET_PRODUCT-ota-eng.$LOGNAME.zip
+if [ ! -f "$OTAPACKAGE" ]; then
+	echo "$OTAPACKAGE doesn't exist!";
+	exit 1
+fi
+
+QUIET=-q
+DELETE_BINS="check_prereq recovery updater system/bin/applypatch system/bin/applypatch_static META-INF/com/google/android/update-script META-INF/com/android"
+
+
+REPACK=$OUT/repack.d
+printf "Sanitizing environment..."
+rm -rf $REPACK
+mkdir -p $REPACK
+echo
+
+
+# Unpack the otapackage
+mkdir $REPACK/ota
+(
+cd $REPACK/ota
+printf "Unpacking $OTAPACKAGE..."
+unzip $QUIET $OTAPACKAGE
+echo
+)
+
+# Fix build.prop
+sed -f $ANDROID_BUILD_TOP/vendor/shadow/tools/makerelease.cfg -i $REPACK/ota/system/build.prop
+
+# Delete unnecessary binaries
+( cd $REPACK/ota; echo $DELETE_BINS | xargs rm -rf; )
+
+# Strip modules
+find $REPACK/ota/system/lib/modules -name "*.ko" -print0 | xargs -0 arm-eabi-strip --strip-unneeded
+
+# Inject GPS fix
+printf "Injecting smali..."
+(
+SMALID=$OUT/smali.d
+rm -rf $SMALID
+mkdir -p $SMALID
+cd $SMALID
+unzip $QUIET $REPACK/ota/system/framework/framework.jar "classes.dex"
+java -Xmx512m \
+    -jar $ANDROID_BUILD_TOP/vendor/shadow/tools/smali/baksmali.jar classes.dex -o framework
+cp -fr $ANDROID_BUILD_TOP/vendor/shadow/tools/smali/umts_sholes/framework/* framework
+java -Xmx512m \
+    -jar $ANDROID_BUILD_TOP/vendor/shadow/tools/smali/smali.jar framework -o classes.dex
+zip $QUIET $REPACK/ota/system/framework/framework.jar "classes.dex"
+rm -f classes.dex
+unzip $QUIET $REPACK/ota/system/framework/services.jar "classes.dex"
+java -Xmx512m \
+    -jar $ANDROID_BUILD_TOP/vendor/shadow/tools/smali/baksmali.jar classes.dex -o services
+cp -fr $ANDROID_BUILD_TOP/vendor/shadow/tools/smali/umts_sholes/services/* services
+sed -i '/Location Proxy Service/,/I/ c\
+    const-string v9, "Starting Location Proxy."\
+\
+    invoke-static {v5, v9}, Landroid/util/Slog;->i(Ljava/lang/String;Ljava/lang/String;)I\
+\
+    const-string v5, "locationproxy"\
+\
+    new-instance v9, Lcom/android/server/LocationProxyService;\
+\
+    invoke-direct {v9, v6}, Lcom/android/server/LocationProxyService;-><init>(Landroid/content/Context;)V\
+\
+    invoke-static {v5, v9}, Landroid/os/ServiceManager;->addService(Ljava/lang/String;Landroid/os/IBinder;)V' services/com/android/server/ServerThread.smali
+java -Xmx512m \
+    -jar $ANDROID_BUILD_TOP/vendor/shadow/tools/smali/smali.jar services -o classes.dex
+zip $QUIET $REPACK/ota/system/framework/services.jar "classes.dex"
+rm -rf $SMALID
+)
+echo
+
+# Copy boot raw image
+cp -f $OUT/boot.img $REPACK/ota
+
+# Determine what to name the new signed package
+BUILDVERSION=`sed -n -e'/ro\.build\.display\.id/s/^.*ShadowMOD-BR v//p' $REPACK/ota/system/build.prop`
+OUTFILE=$OUT/update-smbr-$BUILDVERSION-signed.zip
+
+# Zipalign all apks
+printf "Zipaligning apks..."
+for file in $(find $REPACK/ota/system/framework -name "*.apk")
+do
+  zipalign -f 4 $file $file.aligned
+  mv -f $file.aligned $file
+done
+
+for file in $(find $REPACK/ota/system/app -name "*.apk")
+do
+  zipalign -f 4 $file $file.aligned
+  mv -f $file.aligned $file
+done
+echo
+
+# Pack it up and sign
+printf "Zipping package..."
+( cd $REPACK/ota; zip $QUIET -r $REPACK/update.zip . )
+echo
+printf "Signing package..."
+SECURITYDIR=$ANDROID_BUILD_TOP/build/target/product/security
+java -Xmx512m \
+	-jar $ANDROID_BUILD_TOP/out/host/$OUT_TARGET_HOST/framework/signapk.jar \
+	-w $SECURITYDIR/testkey.x509.pem $SECURITYDIR/testkey.pk8 \
+	$REPACK/update.zip $OUTFILE
+echo
+printf "Cleaning up..."
+rm -rf $REPACK
+echo
+
+# Create a md5 checksum image of the repacked package
+(
+img=`basename $OUTFILE`
+cd `dirname $OUTFILE`
+$MD5 $img >$img.md5sum
+echo
+echo "Package complete: $OUTFILE"
+cat $img.md5sum
+echo
+)
+
+exit 0

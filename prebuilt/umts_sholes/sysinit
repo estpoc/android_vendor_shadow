@@ -1,0 +1,7 @@
+#!/system/bin/sh
+export PATH=/sbin:/system/sbin:/system/bin:/system/xbin
+
+for bootscript in $(find /system/etc/init.d -name "*.sh")
+do
+  . $bootscript
+done

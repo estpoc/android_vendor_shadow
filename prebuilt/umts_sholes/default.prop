@@ -1,0 +1,10 @@
+ro.build.config.version=SHADOWMODBR_09_004
+ro.keyboard.type=qwerty
+persist.sys.timezone=America/Sao_Paulo
+ro.fota.enable=0
+net.dns1=8.8.8.8
+net.dns2=8.8.4.4
+net.rmnet0.dns1=8.8.8.8
+net.rmnet0.dns2=8.8.4.4
+ro.com.android.disable_rtsp_nat=0
+ro.ngp_available=0

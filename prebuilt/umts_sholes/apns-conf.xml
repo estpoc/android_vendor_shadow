@@ -1,0 +1,116 @@
+<?xml version='1.0' encoding='UTF-8'?> 
+<apns version='6'>
+  <apn mcc='310' mnc='995' carrier='Android' server='*' mmsc='null' apn='internet' user='*' password='*'/>
+  <apn mmsport='9201' mnc='05' mcc='338' carrier='Bvi:Digicel:Mms:2' mmsc='http://mmc.digiceljamaica.com/servlets/mms' mmsproxy='172.16.7.12' type='mms' user='wapbvi' password='wapbvi' apn='wap.digicelbvi.com'/>
+  <apn mnc='03' mcc='746' port='8080' carrier='Suriname:Digicel:Internet' proxy='172.20.6.12' mmsc='http://wapdigicel.com' type='default,dun' user='wap' password='wap' apn='wap.digicelsr.com'/>
+  <apn mmsport='9201' mnc='20' mcc='340' carrier='French West Indies:Digicel:Mms' mmsc='http://mmc.digiceltt.com/servlets/mms' mmsproxy='172.20.6.12' type='mms' user='wap' password='wap' apn='wap.digicelfr.com'/>
+  <apn mnc='05' mcc='724' carrier='Brazil:Claro:Dados' type='default,dun' user='claro' password='claro' apn='java.claro.com.br'/>
+  <apn mmsport='8080' mnc='01' mcc='712' port='8080' carrier='Costa Rica:Kolbi:MMS' mmsc='http://mmsice' mmsproxy='172.27.10.4' type='mms' apn='mmscelular'/>
+  <apn mmsport='8799' mnc='170' mcc='348' carrier='Bvi:Lime:Mms' mmsc='http://mmsc' mmsproxy='10.20.5.34' type='mms' apn='multimedia'/>
+  <apn mnc='02' mcc='372' port='8080' carrier='Haiti:Digicel:Internet' proxy='172.20.200.12' mmsc='http://wapdigicel.com' type='default,dun' user='wapha' password='wap01ha' apn='wap.digicelha.com'/>
+  <apn mnc='20' mcc='340' port='8080' carrier='French West Indies:Digicel:Internet' proxy='172.20.6.12' mmsc='http://wapdigicel.com' type='default,dun' user='wap' password='wap' apn='wap.digicelfr.com'/>
+  <apn mmsport='8080' mnc='01' mcc='370' port='8080' carrier='Dominican Rep:Orange:MMS' mmsc='http://mmr.orangewi.com/servlets/mms' mmsproxy='172.16.126.70' type='mms' user='orange' password='orange' apn='orangeworld'/>
+  <apn mnc='170' mcc='348' carrier='Bvi:Lime:Internet' mmsc='http://www.time4lime.com/' type='default,dun' apn='internet'/>
+  <apn mnc='02' mcc='704' carrier='Guatemala:Tigo:Internet' mmsc='http://wap.tigo.com.gt' type='default,dun' apn='internet.tigo.gt'/>
+  <apn mnc='31' mcc='724' carrier='Brazil:Oi:Dados:1' type='default,dun' user='oi' password='oi' apn='gprs.oi.com.br'/>
+  <apn mnc='05' mcc='338' port='8080' carrier='Caribean:Digicel:Internet' proxy='172.16.7.12' mmsc='http://wapdigicel.com' type='default,dun' apn='wap'/>
+  <apn mnc='13' mcc='374' port='8080' carrier='Trinidad And Tobago:Digicel:Internet:2' proxy='172.20.6.12' mmsc='http://portal.digiceltt.com' type='default,dun' user='wap' password='wap' apn='wap.digiceltt.com'/>
+  <apn mmsport='9201' mnc='03' mcc='746' carrier='Suriname:Digicel:Mms' mmsc='http://mmc.digicelsr.com/servlets/mms' mmsproxy='172.20.6.12' type='mms' user='wap' password='wap' apn='wap.digicelsr.com'/>
+  <apn mnc='350' mcc='376' carrier='Turks And Caicos:Lime:Internet' mmsc='http://www.time4lime.com/' type='default,dun' apn='internet'/>
+  <apn mmsport='9201' mnc='020' mcc='363' carrier='Aruba:Digicel:Mms:2' mmsc='http://mms.digicelgroup.com' mmsproxy='172.16.7.12' type='mms' apn='wap'/>
+  <apn mmsport='8799' mnc='110' mcc='356' carrier='St Kitts And Nevis:Lime:Mms' mmsc='http://mmsc' mmsproxy='10.20.5.34' type='mms' apn='multimedia'/>
+  <apn mnc='24' mcc='724' carrier='Brazil:Oi:Dados:2' type='default,dun' user='oi' password='oi' apn='gprs.oi.com.br'/>
+  <apn mnc='16' mcc='724' carrier='Brazil:BrT:Dados' type='default,dun' user='brt' password='brt' apn='brt.br'/>
+  <apn mnc='15' mcc='724' carrier='Brazil:Sercomtel:Dados' type='default,dun' user='sercomtel' password='sercomtel' apn='sercomtel.com.br'/>
+  <apn mnc='110' mcc='352' carrier='Grenada:Lime:Internet' mmsc='http://www.time4lime.com/' type='default,dun' apn='internet'/>
+  <apn mmsport='8080' mnc='02' mcc='740' carrier='Ecuador:Alegro:Mms' mmsc='http://mms.alegro.com.ec' mmsproxy='10.4.85.3' type='mms' apn='mms.alegro.net.ec'/>
+  <apn mmsport='8799' mnc='110' mcc='366' carrier='Dominica:Lime:Mms' mmsc='http://mmsc' mmsproxy='10.20.5.34' type='mms' apn='multimedia'/>
+  <apn mmsport='9201' mnc='05' mcc='338' carrier='Haiti:Digicel:Mms:2' mmsc='http://mmc.digicelhaiti.com/servlets/mms' mmsproxy='172.20.200.12' type='mms' user='wapha' password='wap01ha' apn='wap.digicelha.com'/>
+  <apn mmsport='9401' mnc='04' mcc='370' carrier='Dominican Rep:Viva:Mms' mmsc='http://10.200.16.4/mms/wapenc' mmsproxy='192.168.16.10' type='mms' user='viva' password='viva' apn='mms.viva.net.do'/>
+  <apn mnc='02' mcc='708' carrier='Honduras:Tigo:Internet' mmsc='http://wap.tigo.com.hn' type='default,dun' apn='internet.tigo.hn'/>
+  <apn mmsport='8080' mnc='01' mcc='370' port='8080' carrier='Dominican Rep:Orange:Internet' mmsc='http://www.orange.com.do' type='default,dun' apn='orangenet.com.do'/>
+  <apn mmsport='9201' mnc='05' mcc='338' carrier='Caribean:Digicel:Mms' mmsc='http://mms.digicelgroup.com' mmsproxy='172.16.7.12' type='mms' apn='wap'/>
+  <apn mnc='110' mcc='358' carrier='St Lucia:Lime:Internet' mmsc='http://www.time4lime.com/' type='default,dun' apn='internet'/>
+  <apn mnc='860' mcc='354' carrier='Monserrat:Lime:Internet' mmsc='http://www.time4lime.com/' type='default,dun' apn='internet'/>
+  <apn mmsport='9201' mnc='770' mcc='348' carrier='Bvi:Digicel:Mms' mmsc='http://mmc.digiceljamaica.com/servlets/mms' mmsproxy='172.16.7.12' type='mms' user='wapbvi' password='wapbvi' apn='wap.digicelbvi.com'/>
+  <apn mnc='140' mcc='346' carrier='Cayman Islands:Lime:Internet' mmsc='http://www.time4lime.com/' type='default,dun' apn='internet'/>
+  <apn mmsport='8799' mnc='15' mcc='724' carrier='Brazil:Sercomtel:MMS' mmsc='http://mms.claro.com.br' mmsproxy='200.169.126.10' type='mms' user='sercomtel' password='sercomtel' apn='mms.sercomtel.com.br'/>
+  <apn mmsport='8080' mnc='01' mcc='712' carrier='Costa Rica:Kolbi:Internet' mmsc='http://mimundokolbi.ice.cr' type='default,dun' apn='kolbi'/>
+  <apn mnc='10' mcc='724' carrier='Brazil:Vivo:Dados:1' type='default,dun' user='vivo' password='vivo' apn='zap.vivo.com.br'/>
+  <apn mmsport='8799' mnc='840' mcc='365' carrier='Anguilla:Lime:Mms' mmsc='http://mmsc' mmsproxy='10.20.5.34' type='mms' apn='multimedia'/>
+  <apn mnc='69' mcc='362' port='8080' carrier='Curacao:Digicel:Internet' proxy='172.16.7.12' mmsc='http://wapdigicel.com' type='default,dun' apn='wap'/>
+  <apn mnc='110' mcc='356' carrier='St Kitts And Nevis:Lime:Internet' mmsc='http://www.time4lime.com/' type='default,dun' apn='internet'/>
+  <apn mmsport='9201' mnc='130' mcc='374' carrier='Trinidad And Tobago:Digicel:Mms' mmsc='http://mmc.digiceltt.com/servlets/mms' mmsproxy='172.20.6.12' type='mms' user='wap' password='wap' apn='wap.digiceltt.com'/>
+  <apn mmsport='9201' mnc='02' mcc='363' carrier='Aruba:Digicel:Mms' mmsc='http://mms.digicelgroup.com' mmsproxy='172.16.7.12' type='mms' apn='wap'/>
+  <apn mnc='920' mcc='344' carrier='Antigua:Lime:Internet' mmsc='http://www.time4lime.com/' type='default,dun' apn='internet'/>
+  <apn mnc='11' mcc='724' carrier='Brazil:Vivo:Dados:2' type='default,dun' user='vivo' password='vivo' apn='zap.vivo.com.br'/>
+  <apn mmsport='8799' mnc='110' mcc='360' carrier='St Vincent:Lime:Mms' mmsc='http://mmsc' mmsproxy='10.20.5.34' type='mms' apn='multimedia'/>
+  <apn mmsport='9201' mnc='69' mcc='362' carrier='Curacao:Digicel:Mms' mmsc='http://mms.digicelgroup.com' mmsproxy='172.16.7.12' type='mms' apn='wap'/>
+  <apn mnc='180' mcc='338' carrier='Jamaica:Lime:Internet' mmsc='http://www.time4lime.com/' type='default,dun' apn='internet'/>
+  <apn mnc='840' mcc='365' carrier='Anguilla:Lime:Internet' mmsc='http://www.time4lime.com/' type='default,dun' apn='internet'/>
+  <apn mnc='06' mcc='724' carrier='Brazil:Vivo:Dados:3' type='default,dun' user='vivo' password='vivo' apn='zap.vivo.com.br'/>
+  <apn mmsport='9201' mnc='040' mcc='708' carrier='Honduras:Digicel:Mms:2' mmsc='http://mms.digicelsv.com/servlets/mms' mmsproxy='172.26.5.12' type='mms' apn='wap.digicelhn.com'/>
+  <apn mnc='23' mcc='724' carrier='Brazil:Vivo:Dados:4' type='default,dun' user='vivo' password='vivo' apn='zap.vivo.com.br'/>
+  <apn mnc='040' mcc='714' port='8080' carrier='Panama:Digicel:Internet:2' proxy='172.27.99.99' mmsc='http://wapdigicel.com' type='default,dun' apn='wap.digicelpanama.com'/>
+  <apn mnc='32' mcc='724' carrier='Brazil:CTBC:Dados:1' type='default,dun' user='CTBC' password='1212' apn='ctbc.br'/>
+  <apn mmsport='8080' mnc='01' mcc='714' carrier='Panama:CW:Mms' mmsc='http://mms.zonamovil.com.pa' mmsproxy='172.25.3.5' type='mms' apn='apn02.cwpanama.com.pa'/>
+  <apn mmsport='8080' mnc='12' mcc='374' carrier='Trinidad And Tobago:Bmobile:Mms' mmsc='http://192.168.210.104/mmrelay.app' mmsproxy='192.168.210.105' type='mms' apn='mms'/>
+  <apn mmsport='8799' mnc='110' mcc='358' carrier='St Lucia:Lime:Mms' mmsc='http://mmsc' mmsproxy='10.20.5.34' type='mms' apn='multimedia'/>
+  <apn mmsport='8080' mnc='01' mcc='744' carrier='Paraguay:Voxx:Mms' mmsc='http://srvvirtual.vox.com.py/mmsc ' mmsproxy='172.024.097.029 ' type='mms' apn='vox.mms '/>
+  <apn mmsport='8799' mnc='140' mcc='346' carrier='Cayman Islands:Lime:Mms' mmsc='http://mmsc' mmsproxy='10.20.5.34' type='mms' apn='multimedia'/>
+  <apn mmsport='8888' mnc='02' mcc='704' carrier='Guatemala:Tigo:Mms' mmsc='http://mms' mmsproxy='10.16.17.12' type='mms' apn='mms.tigo.gt'/>
+  <apn mnc='110' mcc='366' carrier='Dominica:Lime:Internet' mmsc='http://www.time4lime.com/' type='default,dun' apn='internet'/>
+  <apn mnc='33' mcc='724' carrier='Brazil:CTBC:Dados:2' type='default,dun' user='CTBC' password='1212' apn='ctbc.br'/>
+  <apn mmsport='9201' mnc='13' mcc='374' carrier='Trinidad And Tobago:Digicel:Mms:2' mmsc='http://mmc.digiceltt.com/servlets/mms' mmsproxy='172.20.6.12' type='mms' user='wap' password='wap' apn='wap.digiceltt.com'/>
+  <apn mmsport='8799' mnc='180' mcc='338' carrier='Jamaica:Lime:Mms' mmsc='http://mmsc' mmsproxy='10.20.5.34' type='mms' apn='multimedia'/>
+  <apn mmsport='8799' mnc='860' mcc='354' carrier='Monserrat:Lime:Mms' mmsc='http://mmsc' mmsproxy='10.20.5.34' type='mms' apn='multimedia'/>
+  <apn mnc='130' mcc='374' port='8080' carrier='Trinidad And Tobago:Digicel:Internet' proxy='172.20.6.12' mmsc='http://portal.digiceltt.com' type='default,dun' user='wap' password='wap' apn='wap.digiceltt.com'/>
+  <apn mmsport='9201' mnc='04' mcc='714' carrier='Panama:Digicel:Mms' mmsc='http://mmc.digicelpanama.com/servlets/mms' mmsproxy='172.27.99.99' type='mms' apn='wap.digicelpanama.com'/>
+  <apn mmsport='8080' mnc='32' mcc='724' carrier='Brazil:CTBC:MMS:1' mmsc='http://mms.ctbccelular.com.br/was' mmsproxy='172.29.7.70' type='mms' user='CTBC' password='1212' apn='mms.ctbc.br'/>
+  <apn mnc='01' mcc='744' port='8080' carrier='Paraguay:Voxx:Internet' mmsc='http://www.vox.com.py/' mmsproxy='172.024.097.029 ' type='default,dun' apn='vox.wap '/>
+  <apn mmsport='8799' mnc='05' mcc='724' carrier='Brazil:Claro:MMS' mmsc='http://mms.claro.com.br' mmsproxy='200.169.126.10' type='mms' user='claro' password='claro' apn='mms.claro.com.br'/>
+  <apn mnc='34' mcc='724' carrier='Brazil:CTBC:Dados:3' type='default,dun' user='CTBC' password='1212' apn='ctbc.br'/>
+  <apn mnc='05' mcc='338' port='8080' carrier='Haiti:Digicel:Internet:2' proxy='172.20.200.12' mmsc='http://wapdigicel.com' type='default,dun' user='wapha' password='wap01ha' apn='wap.digicelha.com'/>
+  <apn mnc='110' mcc='360' carrier='St Vincent:Lime:Internet' mmsc='http://www.time4lime.com/' type='default,dun' apn='internet'/>
+  <apn mmsport='9201' mnc='02' mcc='706' carrier='El Salvador:Digicel:Mms' mmsc='http://172.26.5.132/servlets/mms' mmsproxy='172.26.5.12' type='mms' apn='wap.digicelsv.com'/>
+  <apn mmsport='8080' mnc='33' mcc='724' carrier='Brazil:CTBC:MMS:2' mmsc='http://mms.ctbccelular.com.br/was' mmsproxy='172.29.7.70' type='mms' user='CTBC' password='1212' apn='mms.ctbc.br'/>
+  <apn mmsport='3128' mnc='31' mcc='724' carrier='Brazil:Oi:MMS:1' mmsc='http://200.222.42.204:8002' mmsproxy='192.168.10.50' type='mms' user='oimms' password='oioioi' apn='mmsgprs.oi.com.br'/>
+  <apn mmsport='9201' mnc='01' mcc='738' carrier='Guyana:Digicel:Mms' mmsc='http://mmc.digicelgy.com/servlets/mms' mmsproxy='172.20.6.12' type='mms' user='wap' password='wap' apn='wap.digicelgy.com'/>
+  <apn mmsport='8888' mnc='03' mcc='706' carrier='El Salvador:Tigo:Mms' mmsc='http://mms' mmsproxy='10.16.17.12' type='mms' apn='mms.tigo.sv'/>
+  <apn mmsport='9201' mnc='02' mcc='372' carrier='Haiti:Digicel:Mms' mmsc='http://mmc.digicelhaiti.com/servlets/mms' mmsproxy='172.20.200.12' type='mms' user='wapha' password='wap01ha' apn='wap.digicelha.com'/>
+  <apn mmsport='80' mnc='10' mcc='724' carrier='Brazil:Vivo:MMS:1' mmsc='http://termnat.vivomms.com.br:8088/mms' mmsproxy='200.142.130.104' type='mms' user='vivo' password='vivo' apn='mms.vivo.com.br'/>
+  <apn mmsport='8080' mnc='34' mcc='724' carrier='Brazil:CTBC:MMS:3' mmsc='http://mms.ctbccelular.com.br/was' mmsproxy='172.29.7.70' type='mms' user='CTBC' password='1212' apn='mms.ctbc.br'/>
+  <apn mnc='04' mcc='708' port='8080' carrier='Honduras:Digicel:Internet' proxy='172.26.5.12' mmsc='http://www.digicelive.com' type='default,dun' apn='wap.digicelhn.com'/>
+  <apn mnc='02' mcc='363' port='8080' carrier='Aruba:Digicel:Internet' proxy='172.16.7.12' mmsc='http://wapdigicel.com' type='default,dun' apn='wap'/>
+  <apn mnc='04' mcc='370' port='9401' carrier='Dominican Rep:Viva:Internet' proxy='192.168.16.10' mmsc='http://wap.viva.net.do/WapDeck/' type='default,dun' user='viva' password='viva' apn='edge.viva.net.do'/>
+  <apn mnc='03' mcc='706' carrier='El Salvador:Tigo:Internet' mmsc='http://wap.tigo.com.sv' type='default,dun' apn='internet.tigo.sv'/>
+  <apn mmsport='8888' mnc='02' mcc='708' carrier='Honduras:Tigo:Mms' mmsc='http://mms' mmsproxy='10.16.17.12' type='mms' apn='mms.tigo.hn'/>
+  <apn mmsport='3128' mnc='24' mcc='724' carrier='Brazil:Oi:MMS:2' mmsc='http://200.222.42.204:8002' mmsproxy='192.168.10.50' type='mms' user='oimms' password='oioioi' apn='mmsgprs.oi.com.br'/>
+  <apn mnc='600' mcc='342' carrier='Barbados:Lime:Internet' mmsc='http://www.time4lime.com/' type='default,dun' apn='internet'/>
+  <apn mmsport='9201' mnc='04' mcc='708' carrier='Honduras:Digicel:Mms' mmsc='http://mms.digicelsv.com/servlets/mms' mmsproxy='172.26.5.12' type='mms' apn='wap.digicelhn.com'/>
+  <apn mmsport='8799' mnc='920' mcc='344' carrier='Antigua:Lime:Mms' mmsc='http://mmsc' mmsproxy='10.20.5.34' type='mms' apn='multimedia'/>
+  <apn mmsport='8080' mnc='02' mcc='724' carrier='Brazil:Tim:MMS:1' mmsc='http://mms.tim.br' mmsproxy='200.179.66.242' type='mms' user='tim' password='tim' apn='timbrasil.br'/>
+  <apn mmsport='80' mnc='11' mcc='724' carrier='Brazil:Vivo:MMS:2' mmsc='http://termnat.vivomms.com.br:8088/mms' mmsproxy='200.142.130.104' type='mms' user='vivo' password='vivo' apn='mms.vivo.com.br'/>
+  <apn mnc='05' mcc='338' port='8080' carrier='Bvi:Digicel:Internet:2' proxy='172.16.7.12' mmsc='http://wapdigicel.com' type='default,dun' user='wapbvi' password='wapbvi' apn='wap.digicelbvi.com'/>
+  <apn mmsport='8799' mnc='350' mcc='376' carrier='Turks And Caicos:Lime:Mms' mmsc='http://mmsc' mmsproxy='10.20.5.34' type='mms' apn='multimedia'/>
+  <apn mnc='040' mcc='708' port='8080' carrier='Honduras:Digicel:Internet:2' proxy='172.26.5.12' mmsc='http://www.digicelive.com' type='default,dun' apn='wap.digicelhn.com'/>
+  <apn mnc='01' mcc='738' port='8080' carrier='Guyana:Digicel:Internet' proxy='172.20.6.12' mmsc='http://www.digicelive.com' type='default,dun' user='wap' password='wap' apn='wap.digicelgy.com'/>
+  <apn mnc='01' mcc='714' carrier='Panama:CW:Internet' mmsc='http://wap.masmovil.com.pa' type='default,dun' apn='apn01.cwpanama.com.pa'/>
+  <apn mnc='02' mcc='706' port='8080' carrier='El Salvador:Digicel:Internet' proxy='172.26.5.12' mmsc='http://wapdigicel.com' type='default,dun' apn='wap.digicelsv.com'/>
+  <apn mnc='02' mcc='724' carrier='Brazil:Tim:Dados:1' type='default,dun' user='tim' password='tim' apn='timbrasil.br'/>
+  <apn mmsport='8080' mnc='03' mcc='724' carrier='Brazil:Tim:MMS:2' mmsc='http://mms.tim.br' mmsproxy='200.179.66.242' type='mms' user='tim' password='tim' apn='timbrasil.br'/>
+  <apn mmsport='80' mnc='06' mcc='724' carrier='Brazil:Vivo:MMS:3' mmsc='http://termnat.vivomms.com.br:8088/mms' mmsproxy='200.142.130.104' type='mms' user='vivo' password='vivo' apn='mms.vivo.com.br'/>
+  <apn mnc='12' mcc='374' carrier='Trinidad And Tobago:Bmobile:Internet' mmsc='http://www.time4lime.com/' type='default,dun' apn='internet'/>
+  <apn mnc='770' mcc='348' port='8080' carrier='Bvi:Digicel:Internet' proxy='172.16.7.12' mmsc='http://wapdigicel.com' type='default,dun' user='wapbvi' password='wapbvi' apn='wap.digicelbvi.com'/>
+  <apn mmsport='9201' mnc='040' mcc='714' carrier='Panama:Digicel:Mms:2' mmsc='http://mmc.digicelpanama.com/servlets/mms' mmsproxy='172.27.99.99' type='mms' apn='wap.digicelpanama.com'/>
+  <apn mnc='02' mcc='740' port='8080' carrier='Ecuador:Alegro:Internet' proxy='10.4.85.3' mmsc=' www.alegro.com.ec/alegrowap/default.aspx' mmsproxy='' type='default,dun' apn='wap.alegro.net.ec'/>
+  <apn mnc='03' mcc='724' carrier='Brazil:Tim:Dados:2' type='default,dun' user='tim' password='tim' apn='timbrasil.br'/>
+  <apn mmsport='8799' mnc='600' mcc='342' carrier='Barbados:Lime:Mms' mmsc='http://mmsc' mmsproxy='10.20.5.34' type='mms' apn='multimedia'/>
+  <apn mmsport='8080' mnc='04' mcc='724' carrier='Brazil:Tim:MMS:3' mmsc='http://mms.tim.br' mmsproxy='200.179.66.242' type='mms' user='tim' password='tim' apn='timbrasil.br'/>
+  <apn mmsport='80' mnc='16' mcc='724' carrier='Brazil:BrT:MMS' mmsc='http://mms.brasiltelecom.com.br' mmsproxy='200.96.8.29' type='mms' user='brt' password='brt' apn='mms.brt.br'/>
+  <apn mmsport='80' mnc='23' mcc='724' carrier='Brazil:Vivo:MMS:4' mmsc='http://termnat.vivomms.com.br:8088/mms' mmsproxy='200.142.130.104' type='mms' user='vivo' password='vivo' apn='mms.vivo.com.br'/>
+  <apn mnc='020' mcc='363' port='8080' carrier='Aruba:Digicel:Internet:2' proxy='172.16.7.12' mmsc='http://wapdigicel.com' type='default,dun' apn='wap'/>
+  <apn mnc='04' mcc='714' port='8080' carrier='Panama:Digicel:Internet' proxy='172.27.99.99' mmsc='http://wapdigicel.com' type='default,dun' apn='wap.digicelpanama.com'/>
+  <apn mmsport='8799' mnc='110' mcc='352' carrier='Grenada:Lime:Mms' mmsc='http://mmsc' mmsproxy='10.20.5.34' type='mms' apn='multimedia'/>
+  <apn mnc='04' mcc='724' carrier='Brazil:Tim:Dados:3' type='default,dun' user='tim' password='tim' apn='timbrasil.br'/>
+</apns>

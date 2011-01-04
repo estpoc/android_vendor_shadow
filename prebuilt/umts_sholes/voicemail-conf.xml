@@ -1,0 +1,53 @@
+<voicemail>
+  <voicemail numeric='33805' vmnumber='123' carrier='Digicel Jamaica'/>
+  <voicemail numeric='70602' vmnumber='123' carrier='Digicel El Salvador'/>
+  <voicemail numeric='72404' vmnumber='*100' carrier='TIM Brasil'/>
+  <voicemail numeric='708001' vmnumber='*80' carrier='Claro Honduras'/>
+  <voicemail numeric='714020' vmnumber='*86' carrier='Movistar Panama'/>
+  <voicemail numeric='72405' vmnumber='*100' carrier='Claro Brasil'/>
+  <voicemail numeric='71021' vmnumber='*855' carrier='Claro Nicaragua'/>
+  <voicemail numeric='73010' vmnumber='#123' carrier='ENTEL CHILE'/>
+  <voicemail numeric='73406' vmnumber='*9' carrier='Movilnet Venezuela'/>
+  <voicemail numeric='72416' vmnumber='*100' carrier='Brasil Telecom'/>
+  <voicemail numeric='72207' vmnumber='555' carrier='MOVISTAR ARGENTINA'/>
+  <voicemail numeric='72406' vmnumber='*555' carrier='Vivo Brasil'/>
+  <voicemail numeric='74807' vmnumber='6648' carrier='Movistar Uruguay'/>
+  <voicemail numeric='334020' vmnumber='*86' carrier='Telcel Mexico'/>
+  <voicemail numeric='70604' vmnumber='*86' carrier='Movistar El Salvador'/>
+  <voicemail numeric='21402' vmnumber='*555' carrier='Vivo Brasil'/>
+  <voicemail numeric='73001' vmnumber='#123' carrier='ENTEL CHILE'/>
+  <voicemail numeric='710020' vmnumber='*86' carrier='Movistar Nicaragua'/>
+  <voicemail numeric='330110' vmnumber='*86' carrier='Claro Puerto Rico'/>
+  <voicemail numeric='71606' vmnumber='*169' carrier='movistar Peru'/>
+  <voicemail numeric='37001' vmnumber='*777' carrier='France Telecom Dominican Republic'/>
+  <voicemail numeric='26806' vmnumber='*555' carrier='Vivo Brasil'/>
+  <voicemail numeric='73002' vmnumber='500' carrier='MOVISTAR CHILE'/>
+  <voicemail numeric='70804' vmnumber='123' carrier='Digicel Honduras'/>
+  <voicemail numeric='37002' vmnumber='*99' carrier='Claro Dominicana'/>
+  <voicemail numeric='33403' vmnumber='186' carrier='Movistar Mexico'/>
+  <voicemail numeric='338180' vmnumber='123' carrier='C&amp;W Jamaica'/>
+  <voicemail numeric='21405' vmnumber='*555' carrier='Vivo Brasil'/>
+  <voicemail numeric='338070' vmnumber='123' carrier='Claro Jamaica'/>
+  <voicemail numeric='72410' vmnumber='*555' carrier='Vivo Brasil'/>
+  <voicemail numeric='71401' vmnumber='*111' carrier='C&amp;W Panama'/>
+  <voicemail numeric='72411' vmnumber='*555' carrier='Vivo Brasil'/>
+  <voicemail numeric='37412' vmnumber='*91' carrier='C&amp;W Trinidad'/>
+  <voicemail numeric='74000' vmnumber='*82' carrier='movistar Ecuador'/>
+  <voicemail numeric='72423' vmnumber='*555' carrier='Vivo Brasil'/>
+  <voicemail numeric='21407' vmnumber='*555' carrier='Vivo Brasil'/>
+  <voicemail numeric='70401' vmnumber='*80' carrier='Claro Guatemala'/>
+  <voicemail numeric='732101' vmnumber='*123' carrier='Comcel Colombia'/>
+  <voicemail numeric='732123' vmnumber='*123' carrier='Movistar Colombia'/>
+  <voicemail numeric='70402' vmnumber='*77' carrier='Tigo Guatemala'/>
+  <voicemail numeric='72402' vmnumber='*100' carrier='TIM Brasil'/>
+  <voicemail numeric='710300' vmnumber='*86' carrier='Movistar Nicaragua'/>
+  <voicemail numeric='71073' vmnumber='*855' carrier='Claro Nicaragua'/>
+  <voicemail numeric='71403' vmnumber='*111' carrier='Claro Panama'/>
+  <voicemail numeric='374130' vmnumber='123' carrier='Digicel Trinidad'/>
+  <voicemail numeric='71404' vmnumber='123' carrier='Digicel Panama'/>
+  <voicemail numeric='72403' vmnumber='*100' carrier='TIM Brasil'/>
+  <voicemail numeric='73404' vmnumber='*2' carrier='Movistar Venezuela'/>
+  <voicemail numeric='70403' vmnumber='*86' carrier='Movistar Guatemala'/>
+  <voicemail numeric='732103' vmnumber='*123' carrier='Tigo Colombia'/>
+  <voicemail numeric='70601' vmnumber='*80' carrier='Claro El Salvador'/>
+</voicemail>
