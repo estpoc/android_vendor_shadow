@@ -549,7 +549,7 @@ service secclkd /system/bin/secclkd
 on property:dev.bootcomplete=1
     start bootscripts
 
-service bootscripts /system/bin/logwrapper /system/bin/sysinit
+service bootscripts /system/bin/sysinit
     class post-zygote_services
     disabled
     oneshot
