@@ -1,18 +1,21 @@
 #!/system/bin/sh
 
+# 250x900, low voltage
+# Configuration by edgardcastro
+
 # Load overclock modules
 insmod /system/lib/modules/symsearch.ko
 insmod /system/lib/modules/overclock.ko
 
 # Set max values for frequency and vsel
-echo "60" > /proc/overclock/max_vsel
+echo "62" > /proc/overclock/max_vsel
 echo "900000" > /proc/overclock/max_rate
 
 # Configure available frequencies
-echo "5 900000000 60" > /proc/overclock/mpu_opps
-echo "4 700000000 49" > /proc/overclock/mpu_opps
-echo "3 500000000 44" > /proc/overclock/mpu_opps
-echo "2 250000000 33" > /proc/overclock/mpu_opps
+echo "5 900000000 62" > /proc/overclock/mpu_opps
+echo "4 700000000 51" > /proc/overclock/mpu_opps
+echo "3 500000000 46" > /proc/overclock/mpu_opps
+echo "2 250000000 35" > /proc/overclock/mpu_opps
 echo "1 125000000 32" > /proc/overclock/mpu_opps
 
 # Configure scaling frequencies
