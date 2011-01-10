@@ -25,9 +25,6 @@ PRODUCT_COPY_FILES += \
         vendor/shadow/proprietary/GooglePartnerSetup.apk:system/app/GooglePartnerSetup.apk \
         vendor/shadow/proprietary/GoogleQuickSearchBox.apk:system/app/GoogleQuickSearchBox.apk \
         vendor/shadow/proprietary/GoogleServicesFramework.apk:system/app/GoogleServicesFramework.apk \
-        vendor/shadow/proprietary/HtcCopyright.apk:system/app/HtcCopyright.apk \
-        vendor/shadow/proprietary/HtcEmailPolicy.apk:system/app/HtcEmailPolicy.apk \
-        vendor/shadow/proprietary/HtcSettings.apk:system/app/HtcSettings.apk \
         vendor/shadow/proprietary/LatinImeTutorial.apk:system/app/LatinImeTutorial.apk \
         vendor/shadow/proprietary/Maps.apk:system/app/Maps.apk \
         vendor/shadow/proprietary/MarketUpdater.apk:system/app/MarketUpdater.apk \
