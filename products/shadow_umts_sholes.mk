@@ -91,7 +91,6 @@ PRODUCT_COPY_FILES += \
 
 # Overclocking
 PRODUCT_COPY_FILES += \
-    vendor/shadow/prebuilt/umts_sholes/71_overclock:system/etc/init.d/71_overclock \
     vendor/shadow/prebuilt/umts_sholes/72_governor:system/etc/init.d/72_governor \
     vendor/shadow/prebuilt/umts_sholes/cpufreq_conservative.ko:system/lib/modules/cpufreq_conservative.ko \
     vendor/shadow/prebuilt/umts_sholes/cpufreq_interactive.ko:system/lib/modules/cpufreq_interactive.ko \
