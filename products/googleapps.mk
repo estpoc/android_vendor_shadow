@@ -25,11 +25,15 @@ PRODUCT_COPY_FILES += \
         vendor/shadow/proprietary/GooglePartnerSetup.apk:system/app/GooglePartnerSetup.apk \
         vendor/shadow/proprietary/GoogleQuickSearchBox.apk:system/app/GoogleQuickSearchBox.apk \
         vendor/shadow/proprietary/GoogleServicesFramework.apk:system/app/GoogleServicesFramework.apk \
+        vendor/shadow/proprietary/HtcCopyright.apk:system/app/HtcCopyright.apk \
+        vendor/shadow/proprietary/HtcEmailPolicy.apk:system/app/HtcEmailPolicy.apk \
+        vendor/shadow/proprietary/HtcSettings.apk:system/app/HtcSettings.apk \
         vendor/shadow/proprietary/LatinImeTutorial.apk:system/app/LatinImeTutorial.apk \
         vendor/shadow/proprietary/Maps.apk:system/app/Maps.apk \
         vendor/shadow/proprietary/MarketUpdater.apk:system/app/MarketUpdater.apk \
         vendor/shadow/proprietary/MediaUploader.apk:system/app/MediaUploader.apk \
         vendor/shadow/proprietary/NetworkLocation.apk:system/app/NetworkLocation.apk \
+        vendor/shadow/proprietary/OneTimeInitializer.apk:system/app/OneTimeInitializer.apk \
         vendor/shadow/proprietary/SetupWizard.apk:system/app/SetupWizard.apk \
         vendor/shadow/proprietary/Street.apk:system/app/Street.apk \
         vendor/shadow/proprietary/Talk.apk:system/app/Talk.apk \
