@@ -1,4 +1,3 @@
-s/ro\.build\.display\.id=.*/ro.build.display.id=ShadowMOD-BR v0.9.15/g
 s/ro\.build\.id=.*/ro.build.id=FRG83D/g
 s/ro\.build\.version\.incremental=.*/ro.build.version.incremental=75603/g
 s/ro\.build\.description=.*/ro.build.description=voles-user 2.2.1 FRG83D 75603 release-keys/g

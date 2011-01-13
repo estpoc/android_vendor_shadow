@@ -46,7 +46,9 @@ echo
 )
 
 # Fix build.prop
-sed -f $ANDROID_BUILD_TOP/vendor/shadow/tools/makerelease.cfg -i $REPACK/ota/system/build.prop
+MODVERSION=$(sed -n -e'/ro\.modversion/s/^.*SMBR-//p' $REPACK/ota/system/build.prop)
+sed -f $ANDROID_BUILD_TOP/vendor/shadow/tools/makerelease.rules -i $REPACK/ota/system/build.prop
+sed "s/ro\.build\.display\.id=.*/ro.build.display.id=ShadowMOD-BR v${MODVERSION}/g" -i $REPACK/ota/system/build.prop
 
 # Delete unnecessary binaries
 ( cd $REPACK/ota; echo $DELETE_BINS | xargs rm -rf; )
@@ -92,12 +94,10 @@ rm -rf $SMALID
 )
 echo
 
-# Copy boot raw image
+# Copy images
 cp -f $OUT/boot.img $REPACK/ota
-
-# Determine what to name the new signed package
-BUILDVERSION=`sed -n -e'/ro\.build\.display\.id/s/^.*ShadowMOD-BR v//p' $REPACK/ota/system/build.prop`
-OUTFILE=$OUT/update-smbr-$BUILDVERSION-signed.zip
+cp -f $OUT/bpsw.img $REPACK/ota
+cp -f $OUT/devtree.img $REPACK/ota
 
 # Zipalign all apks
 printf "Zipaligning apks..."
@@ -113,6 +113,9 @@ do
   mv -f $file.aligned $file
 done
 echo
+
+# Set output zip name
+OUTFILE=$OUT/update-smbr-$MODVERSION-signed.zip
 
 # Pack it up and sign
 printf "Zipping package..."
