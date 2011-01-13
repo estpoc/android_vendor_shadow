@@ -2,6 +2,9 @@
 
 # smartass governor
 
+# Load symsearch module
+insmod /system/lib/modules/symsearch.ko
+
 # Load governor modules
 insmod /system/lib/modules/cpufreq_interactive.ko
 insmod /system/lib/modules/cpufreq_smartass.ko
