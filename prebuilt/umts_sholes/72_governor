@@ -1,9 +1,6 @@
 #!/system/bin/sh
 
-# smartass governor
-
-# Load symsearch module
-insmod /system/lib/modules/symsearch.ko
+# ondemand governor
 
 # Load governor modules
 insmod /system/lib/modules/cpufreq_interactive.ko
@@ -11,4 +8,4 @@ insmod /system/lib/modules/cpufreq_smartass.ko
 insmod /system/lib/modules/cpufreq_conservative.ko
 
 # Configure default governor
-echo "smartass" > /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
+echo "ondemand" > /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor

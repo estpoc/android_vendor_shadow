@@ -94,6 +94,11 @@ PRODUCT_COPY_FILES += \
     vendor/shadow/prebuilt/umts_sholes/init_prep_keypad.sh:/system/bin/init_prep_keypad.sh \
     vendor/shadow/prebuilt/umts_sholes/sh_hijack.sh:/system/bin/sh_hijack.sh
 
+# Common init
+PRODUCT_COPY_FILES += \
+    vendor/shadow/prebuilt/umts_sholes/01_modules:system/etc/init.d/01_modules
+    vendor/shadow/prebuilt/umts_sholes/symsearch.ko:system/lib/modules/symsearch.ko
+
 # Overclocking
 PRODUCT_COPY_FILES += \
     vendor/shadow/prebuilt/umts_sholes/72_governor:system/etc/init.d/72_governor \
@@ -101,8 +106,7 @@ PRODUCT_COPY_FILES += \
     vendor/shadow/prebuilt/umts_sholes/cpufreq_interactive.ko:system/lib/modules/cpufreq_interactive.ko \
     vendor/shadow/prebuilt/umts_sholes/cpufreq_smartass.ko:system/lib/modules/cpufreq_smartass.ko \
     vendor/shadow/prebuilt/umts_sholes/cpufreq_stats.ko:system/lib/modules/cpufreq_stats.ko \
-    vendor/shadow/prebuilt/umts_sholes/overclock.ko:system/lib/modules/overclock.ko \
-    vendor/shadow/prebuilt/umts_sholes/symsearch.ko:system/lib/modules/symsearch.ko
+    vendor/shadow/prebuilt/umts_sholes/overclock.ko:system/lib/modules/overclock.ko
 
 # Extra overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/shadow/overlay

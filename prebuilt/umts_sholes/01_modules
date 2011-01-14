@@ -1,0 +1,4 @@
+#!/system/bin/sh
+
+# Load symsearch module
+insmod /system/lib/modules/symsearch.ko
