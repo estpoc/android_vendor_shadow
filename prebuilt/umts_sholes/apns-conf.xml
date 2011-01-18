@@ -113,4 +113,6 @@
   <apn mnc='04' mcc='714' port='8080' carrier='Panama:Digicel:Internet' proxy='172.27.99.99' mmsc='http://wapdigicel.com' type='default,dun' apn='wap.digicelpanama.com'/>
   <apn mmsport='8799' mnc='110' mcc='352' carrier='Grenada:Lime:Mms' mmsc='http://mmsc' mmsproxy='10.20.5.34' type='mms' apn='multimedia'/>
   <apn mnc='04' mcc='724' carrier='Brazil:Tim:Dados:3' type='default,dun' user='tim' password='tim' apn='timbrasil.br'/>
+  <apn mnc='07' mcc='722' carrier='Argentina:Movistar:Internet' type='default,dun' user='internet' password='internet' apn='internet.gprs.unifon.com.ar'/>
+  <apn mmsport='8080' mnc='07' mcc='722' carrier='Argentina:Movistar:MMS' mmsc='http://mms.movistar.com.ar' mmsproxy='200.68.32.239' type='mms' apn='mms.gprs.unifon.com.ar' user="mms" password="mms"/>
 </apns>
