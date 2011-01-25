@@ -99,19 +99,17 @@ cp -f $OUT/boot.img $REPACK/ota
 cp -f $OUT/bpsw.img $REPACK/ota
 cp -f $OUT/devtree.img $REPACK/ota
 
-# Zipalign all apks
-printf "Zipaligning apks..."
-for file in $(find $REPACK/ota/system/framework -name "*.apk")
-do
-  zipalign -f 4 $file $file.aligned
-  mv -f $file.aligned $file
-done
+# Opticharger all apks but Google's
+OPTICHARGER=$ANDROID_BUILD_TOP/vendor/shadow/tools/opticharger
+GAPPSEXCLUDELIST=$(cat $ANDROID_BUILD_TOP/vendor/shadow/products/googleapps.mk | grep .apk | cut -d ":" -f 1 | cut -d "/" -f 4 | sed 's/^/ -not -name /g' | tr -d '\n')
 
-for file in $(find $REPACK/ota/system/app -name "*.apk")
-do
-  zipalign -f 4 $file $file.aligned
-  mv -f $file.aligned $file
-done
+# Unpack the otapackage and opticharge all apks
+(
+cd $REPACK/ota/system/framework
+$OPTICHARGER framework-res.apk
+cd $REPACK/ota/system/app
+find . -name "*.apk" $GAPPSEXCLUDELIST -exec $OPTICHARGER {} \;
+)
 echo
 
 # Set output zip name
