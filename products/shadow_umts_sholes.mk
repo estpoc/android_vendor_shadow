@@ -96,7 +96,7 @@ PRODUCT_COPY_FILES += \
 
 # Common init
 PRODUCT_COPY_FILES += \
-    vendor/shadow/prebuilt/umts_sholes/01_modules:system/etc/init.d/01_modules
+    vendor/shadow/prebuilt/umts_sholes/01_modules:system/etc/init.d/01_modules \
     vendor/shadow/prebuilt/umts_sholes/symsearch.ko:system/lib/modules/symsearch.ko
 
 # Overclocking
