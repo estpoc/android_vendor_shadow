@@ -1,7 +1,7 @@
-s/ro\.build\.id=.*/ro.build.id=FRG83D/g
-s/ro\.build\.version\.incremental=.*/ro.build.version.incremental=75603/g
-s/ro\.build\.description=.*/ro.build.description=voles-user 2.2.1 FRG83D 75603 release-keys/g
-s/ro\.build\.fingerprint=.*/ro.build.fingerprint=verizon\/voles\/sholes\/sholes:2.2.1\/FRG83D\/75603:user\/release-keys/g
+s/ro\.build\.id=.*/ro.build.id=FRG83G/g
+s/ro\.build\.version\.incremental=.*/ro.build.version.incremental=91102/g
+s/ro\.build\.description=.*/ro.build.description=passion-user 2.2.2 FRG83G 91102 release-keys/g
+s/ro\.build\.fingerprint=.*/ro.build.fingerprint=google\/passion\/passion\/mahimahi:2.2.2\/FRG83G\/91102:user\/release-keys/
 s/ro\.build\.tags=.*/ro.build.tags=release-keys/g
 s/ro\.product\.locale\.language=.*/ro.product.locale.language=pt/g
 s/ro\.product\.locale\.region=.*/ro.product.locale.region=BR/g
