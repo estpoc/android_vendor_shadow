@@ -19,14 +19,13 @@
 # product configuration (apps).
 #
 
-# Setup product locales.
-PRODUCT_LOCALES := en_US es_US pt_BR
-
 # Inherit from those products. Most specific first.
+$(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 $(call inherit-product, frameworks/base/data/sounds/OriginalAudio.mk)
 $(call inherit-product, frameworks/base/data/sounds/AudioPackage2.mk)
 $(call inherit-product, frameworks/base/data/sounds/AudioPackage3.mk)
 $(call inherit-product, frameworks/base/data/sounds/AudioPackage4.mk)
+$(call inherit-product, frameworks/base/data/sounds/AudioPackage5.mk)
 $(call inherit-product, device/common/gps/gps_us_supl.mk)
 $(call inherit-product, device/motorola/umts_sholes/device.mk)
 $(call inherit-product, vendor/shadow/products/googleapps.mk)
@@ -60,15 +59,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.telephony.call_ring.delay=3000 \
     ro.setupwizard.enable_bypass=1 \
     ro.com.google.gmsversion=2.2_r9 \
-    ro.modversion=SMBR-0.9.16
+    ro.modversion=SMBR-2.3.2b2
 
 # ShadowMOD specific product packages
 PRODUCT_PACKAGES += \
     Superuser
-
-# SM Updater
-PRODUCT_COPY_FILES += \
-    vendor/shadow/prebuilt/umts_sholes/SMUpdater.apk:system/app/SMUpdater.apk
 
 # GSM APN/VM lists
 PRODUCT_COPY_FILES += \

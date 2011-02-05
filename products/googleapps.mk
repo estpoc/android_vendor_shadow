@@ -40,4 +40,5 @@ PRODUCT_COPY_FILES += \
         vendor/shadow/proprietary/com.google.android.maps.xml:system/etc/permissions/com.google.android.maps.xml \
         vendor/shadow/proprietary/features.xml:system/etc/permissions/features.xml \
         vendor/shadow/proprietary/com.google.android.maps.jar:system/framework/com.google.android.maps.jar \
-        vendor/shadow/proprietary/libspeech.so:system/lib/libspeech.so
+        vendor/shadow/proprietary/libspeech.so:system/lib/libspeech.so \
+        vendor/shadow/proprietary/libmicrobes_jni.so:system/lib/libmicrobes_jni.so

@@ -54,17 +54,30 @@ on init
 
 on early-boot
 
+# Define the oom_adj values for the classes of processes that can be
+# killed by the kernel.  These are used in ActivityManagerService.
+    setprop ro.FOREGROUND_APP_ADJ 0
+    setprop ro.VISIBLE_APP_ADJ 1
+    setprop ro.HOME_APP_ADJ 2
+    setprop ro.PERCEPTIBLE_APP_ADJ 3
+    setprop ro.HEAVY_WEIGHT_APP_ADJ 4
+    setprop ro.SECONDARY_SERVER_ADJ 5
+    setprop ro.BACKUP_APP_ADJ 6
+    setprop ro.HIDDEN_APP_MIN_ADJ 7
+    setprop ro.EMPTY_APP_ADJ 15
+
 # Adjust the out of memory thresholds to account for the larget
 # space on sholes.  These numbers are in pages (4k).  Must be kept
 # in sync with init.rc.  This must be done before the regular init.rc
 # since these properies can't change once set.
     setprop ro.FOREGROUND_APP_MEM 1536
     setprop ro.VISIBLE_APP_MEM 2048
-    setprop ro.SECONDARY_SERVER_MEM 4096
-    setprop ro.BACKUP_APP_MEM 4096
-    setprop ro.HOME_APP_MEM 4096
+    setprop ro.HOME_APP_MEM 2048
+    setprop ro.PERCEPTIBLE_APP_MEM 3072
+    setprop ro.HEAVY_WEIGHT_APP_MEM 3072
+    setprop ro.SECONDARY_SERVER_MEM 5120
+    setprop ro.BACKUP_APP_MEM 5120
     setprop ro.HIDDEN_APP_MEM 10240
-    setprop ro.CONTENT_PROVIDER_MEM 12800
     setprop ro.EMPTY_APP_MEM 38400
 
 # Define Motorola DBVC ATVC Property defaults (failsafe properties)
@@ -85,7 +98,8 @@ on early-boot
 on boot
 
 # Overwrite what init.rc selected for the memory killer params to match above.
-    write /sys/module/lowmemorykiller/parameters/minfree 1536,2048,4096,10240,12800,38400
+    write /sys/module/lowmemorykiller/parameters/adj 0,1,3,5,7,15
+    write /sys/module/lowmemorykiller/parameters/minfree 1536,2048,3072,5120,10240,38400
 
     # sensor interface
     chown compass compass /dev/lis331dlh
