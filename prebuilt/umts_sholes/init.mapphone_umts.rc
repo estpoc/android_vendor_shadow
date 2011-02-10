@@ -63,9 +63,9 @@ on early-boot
     setprop ro.SECONDARY_SERVER_MEM 4096
     setprop ro.BACKUP_APP_MEM 4096
     setprop ro.HOME_APP_MEM 4096
-    setprop ro.HIDDEN_APP_MEM 10240
-    setprop ro.CONTENT_PROVIDER_MEM 12800
-    setprop ro.EMPTY_APP_MEM 38400
+    setprop ro.HIDDEN_APP_MEM 5120
+    setprop ro.CONTENT_PROVIDER_MEM 5632
+    setprop ro.EMPTY_APP_MEM 65536
 
 # Define Motorola DBVC ATVC Property defaults (failsafe properties)
     setprop ro.sys.atvc_allow_netmon_usb 0
@@ -85,7 +85,7 @@ on early-boot
 on boot
 
 # Overwrite what init.rc selected for the memory killer params to match above.
-    write /sys/module/lowmemorykiller/parameters/minfree 1536,2048,4096,10240,12800,38400
+    write /sys/module/lowmemorykiller/parameters/minfree 1536,2048,4096,5120,5632,65536
 
     # sensor interface
     chown compass compass /dev/lis331dlh
