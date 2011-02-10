@@ -60,7 +60,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.telephony.call_ring.delay=3000 \
     ro.setupwizard.enable_bypass=1 \
     ro.com.google.gmsversion=2.2_r9 \
-    ro.modversion=SMBR-0.9.16
+    ro.modversion=SMBR-0.9.17
 
 # ShadowMOD specific product packages
 PRODUCT_PACKAGES += \
