@@ -63,6 +63,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # ShadowMOD specific product packages
 PRODUCT_PACKAGES += \
+    Stk \
     Superuser
 
 # GSM APN/VM lists
