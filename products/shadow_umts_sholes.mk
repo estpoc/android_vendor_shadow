@@ -64,6 +64,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # ShadowMOD specific product packages
 PRODUCT_PACKAGES += \
+    Stk \
     Superuser
 
 # SM Updater
