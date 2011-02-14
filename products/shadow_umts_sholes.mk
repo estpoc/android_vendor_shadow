@@ -19,8 +19,11 @@
 # product configuration (apps).
 #
 
+# Product locales
+PRODUCT_LOCALES := pt_BR en_US es_US
+
 # Inherit from those products. Most specific first.
-$(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
+#$(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 $(call inherit-product, frameworks/base/data/sounds/OriginalAudio.mk)
 $(call inherit-product, frameworks/base/data/sounds/AudioPackage2.mk)
 $(call inherit-product, frameworks/base/data/sounds/AudioPackage3.mk)
