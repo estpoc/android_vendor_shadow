@@ -179,6 +179,11 @@ on post-fs
     chown root root /cache/lost+found
     chmod 0770 /cache/lost+found
 
+    # create data/drm directory
+    mkdir /data/drm 0774 drm drm
+    chown drm drm /data/drm
+    chmod 0774 /data/drm
+
     # allow net_raw to have access to /dev/socket directory
     chown root net_raw /dev/socket
     chmod 0775 /dev/socket
@@ -323,6 +328,7 @@ service vold /system/bin/vold
 service netd /system/bin/netd
     class pre-zygote_services
     socket netd stream 0660 root system
+    socket dnsproxyd stream 0660 root inet
 
 service debuggerd /system/bin/debuggerd
     class pre-zygote_services
@@ -341,6 +347,15 @@ service zygote /system/bin/app_process -Xzygote /system/bin --zygote --start-sys
     onrestart write /sys/power/state on
     onrestart restart media
     onrestart restart netd
+
+service drm /system/bin/drmserver
+    class zygote_services
+    user drm
+    group system root inet
+
+service drmio /system/bin/drmioserver
+    class zygote_services
+    user drmio
 
 service media /system/bin/mediaserver
     class zygote_services
