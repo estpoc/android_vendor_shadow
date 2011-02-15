@@ -1,7 +1,4 @@
-s/ro\.build\.id=.*/ro.build.id=GRH78C/g
-s/ro\.build\.version\.incremental=.*/ro.build.version.incremental=93600/g
 s/ro\.build\.description=.*/ro.build.description=soju-user 2.3.2 GRH78C 93600 release-keys/g
 s/ro\.build\.fingerprint=.*/ro.build.fingerprint=google\/soju\/crespo:2.3.2\/GRH78C\/93600:user\/release-keys/g
-s/ro\.build\.tags=.*/ro.build.tags=release-keys/g
 s/ro\.product\.locale\.language=.*/ro.product.locale.language=pt/g
 s/ro\.product\.locale\.region=.*/ro.product.locale.region=BR/g
